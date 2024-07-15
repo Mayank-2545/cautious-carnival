@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div>
+  <style>
+    .home-container {
+      padding: 7rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      text-align: center;
+    }
+    .home {
+      max-width: 900px;
+    }
+    .home h1 {
+      font-size: x-large;
+      margin-bottom: 0px;
+    }
+    .text {
+      font-family: serif;
+      border: 0px;
+      border-radius: 10px;
+      padding: 5px;
+      background:#f13c54 ;
+      background: linear-gradient(27deg,#f13c77,#f5e6ad);
+    }
+    .home h6 {
+      margin-bottom: 5px;
+    }
+    .home button {
+      align-items: center;
+      padding: 10px;
+      margin-top: 5px;
+      background-color: #f13c77;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .home button:hover {
+      background: linear-gradient(27deg,#f13c77,#f5e6ad);
+    }
+    .typing-animation {
+      margin-top: 0px;
+      border-right: 0.1em solid #666;
+      white-space: nowrap;
+      overflow: hidden;
+      transform: translateX(0);
+      animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+      animation-delay: h1, 3s;
+    }
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 100%; }
+    }
+    @keyframes blink-caret {
+      from, to { border-color: transparent; }
+      50% { border-color: #666; }
+    }
+    @media only screen and (max-width: 600px) {
+      .home-container {
+        flex-direction: column;
+        width: fit-content;
+      }
+      .home {
+        width: auto;
+        flex-flow: column wrap;
+      }
+    }  
+  </style>
+  <div class="home-container">
+    <div class="home">
+      <h1>Hello👋 Myself <span class="text">Mayank Patil</span>, </h1>
+      <h1 class="typing-animation"> I am a software devloper specialized in <span class="text">Web dev</span></h1>
+      <h1>How's your day bein?</h1>
+      <h6>A good programmer looks both ways before crossing a one way street… then gets hit by car that falls out of the sky👀</h6>
+      <button onclick="window.location.href='mailto:mayankpatil.ely@gmail.com'">Let's Connect</button>
+    </div>
+  </div>
+</div>
+</body>
+</html>

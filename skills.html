@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <style>
+        .skills-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .title {
+          font-family: serif;
+          border: 0px;
+          border-radius: 10px;
+          padding: 5px;
+          background: #f13c77;
+          background: linear-gradient(27deg,#f13c77,#f5e6ad);
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+        .skill {
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            justify-content: space-evenly;
+            gap: 1.5rem;
+            margin: 20px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            width: 70%;
+            height: auto;
+            max-width: 700px;
+        }
+        .skill-item {
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            inline-size: 300px;
+            width: fit-content;
+        }
+        .skill-item .text {
+            border: 0px;
+            border-radius: 10px;
+            padding: 5px;
+            background: #f13c77;
+            background: linear-gradient(180deg,#f13c77,#f5e6ad);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-top: 5px;
+        }
+        @media only screen and (max-width: 600px) {
+          .skills-container {
+            width:fit-content;
+            flex-direction: column;
+
+          }
+          .skill {
+            width: fit-content;
+            flex-flow: column nowrap;
+          }
+        }
+    </style>
+</head>
+<body>
+    <div class="skills-container">
+        <h1 class="title">Skills</h1>
+        <div class="skill">
+            <div class="skill-item">
+                <box-icon color='white' size='lg' animation="tada-hover" name='html5' type='logo'></box-icon>
+                <span class="text">HTML</span> 
+            </div>
+            <div class="skill-item">
+                <box-icon color='white' size='lg' animation="tada-hover" name='css3' type='logo'></box-icon>
+                <span class="text">CSS</span> 
+            </div>
+            <div class="skill-item">
+                <box-icon color='white' size='lg' animation="tada-hover" name='tailwind-css' type='logo'></box-icon>
+                <span class="text">Tailwind CSS</span> 
+            </div>
+            <div class="skill-item">
+                <box-icon color='white' size='lg' animation="tada-hover" name='javascript' type='logo'></box-icon>
+                <span class="text">JavaScript</span> 
+            </div>
+            <div class="skill-item">
+                <box-icon color='white' size='lg' animation="tada-hover" name='typescript' type='logo'></box-icon>
+                <span class="text">TypeScript</span> 
+            </div>
+            <div class="skill-item">
+                <box-icon color='white' size='lg' animation="tada-hover" name='react' type='logo'></box-icon>
+                <span class="text">React</span> 
+            </div>
+            <div class="skill-item">
+                <box-icon color='white' size='lg' animation="tada-hover" name='nodejs' type='logo'></box-icon>
+                <span class="text">Node.js</span> 
+            </div>
+            <div class="skill-item">
+                <box-icon color='white' size='lg' animation="tada-hover" name='mongodb' type='logo'></box-icon>
+                <span class="text">MongoDB</span> 
+            </div>
+            <div class="skill-item">
+                <box-icon color='white' size='lg' animation="tada-hover" name='firebase' type='logo'></box-icon>
+                <span class="text">Firebase</span> 
+            </div>
+        </div>
+    </div>
+</body>
+</html>

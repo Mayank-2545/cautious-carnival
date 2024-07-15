@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <style>
+        .projects-container {
+          position: relative;
+          z-index: 1;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+          margin: auto;
+        }
+        .title {
+          font-family: serif;
+            border: 0px;
+            border-radius: 10px;
+            padding: 5px;
+            background: #f13c77;
+            background: linear-gradient(27deg,#f13c77,#f5e6ad);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+
+        .projects-container button {
+          padding: 10px 20px;
+          background-color: #f13c77;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+
+        .projects-container button:hover {
+          background: linear-gradient(27deg,#f13c77,#f5e6ad);
+        }
+
+        .projects {
+          display: flex;
+          flex-direction: row;
+          max-width: fit-content;
+        }
+
+        .card {
+          background: rgba(255, 255, 255, 0.2);
+          border-radius: 10px;
+          margin: 10px;
+          padding: 0;
+          width: auto;
+          max-width: 400px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          transition: transform 0.3s;
+        }
+
+        .card:hover {
+          transform: translateY(-10px);
+        }
+
+        .card img {
+          width: 100%;
+          height: auto;
+        }
+
+        .card-content {
+          padding: 20px;
+          background: rgba(0, 0, 0, 0.5);
+          color: white;
+        }
+
+        .card-title {
+          font-size: 1.5em;
+          margin: 0 0 10px;
+        }
+
+        .card-text {
+          font-size: 1em;
+          margin: 0 0 20px;
+        }
+
+        .card-link {
+          display: inline-block;
+          padding: 10px 20px;
+          background: #007BFF;
+          color: white;
+          border-radius: 5px;
+          text-decoration: none;
+          transition: background 0.3s;
+        }
+
+        .card-link:hover {
+          background: #0056b3;
+        }
+
+        @media (max-width: 600px) {
+          .projects-container {
+            padding: 10px;
+            width: fit-content;
+          }
+          .projects {
+            flex-direction: column;
+          }
+        }
+      </style>
+</head>
+<body>
+<div class="projects-container">
+    <h1 class="title">Projects</h1>
+    <div class="projects">
+      <div class="card">
+        <img src="Project1.png" alt="Project Image">
+        <div class="card-content">
+          <h2 class="card-title">Project Title</h2>
+          <p class="card-text">Brief description of the project.</p>
+          <a href="live-link.html" class="card-link">View Live</a>
+        </div>
+      </div>
+  
+      <div class="card">
+        <img src="Project2.png" alt="Project Image">
+        <div class="card-content">
+          <h2 class="card-title">Project Title</h2>
+          <p class="card-text">Brief description of the project.</p>
+          <a href="live-link.html" class="card-link">View Live</a>
+        </div>
+      </div>
+    </div>
+
+    <button onclick="loadMoreProjects()">Show More</button>
+</div>
+  <script>
+    function loadMoreProjects() {
+      return ("Sorry still work in progress!🙇");
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mayank's Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</head>
+<body>
+  <div class="video-background">
+    <video autoplay muted loop id="background-video">
+      <source src="v2mp4.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="container">
+    <nav class="sidebar">
+      <ul>
+        <li id="home"  onclick="loadContent('home')" >
+          <a href="#home">
+            <div class="tooltip">
+              <box-icon animation='tada-hover' color='white' name='home-alt-2'></box-icon>
+              <span class="tooltip-text">Home</span>  
+            </div>
+          </a>
+        </li>
+        <li id="projects"  onclick="loadContent('projects')" >
+          <a href="#projects">
+            <div class="tooltip">
+              <box-icon animation='tada-hover' color='white' name='rocket'></box-icon>
+              <span class="tooltip-text">Projects</span>
+            </div>
+          </a>
+        </li>
+        <li id="skills"  onclick="loadContent('skills')" >
+          <a href="#skills">
+            <div class="tooltip">
+              <box-icon animation='tada-hover' color='white' name='briefcase'></box-icon>
+              <span class="tooltip-text">Skills</span>
+            </div>
+          </a>
+        </li>
+        <li id="about"  onclick="loadContent('about')" >
+          <a href="#about">
+            <div class="tooltip">
+              <box-icon animation='tada-hover' color='white' name='male'></box-icon>
+              <span class="tooltip-text">About Me</span>
+            </div>
+          </a>
+        </li>
+        <li id="contact"  onclick="loadContent('contact')" >
+          <a href="#contact">
+            <div class="tooltip">
+              <box-icon animation='tada-hover' color='white' name='phone-call'></box-icon>
+              <span class="tooltip-text">Contact</span>
+            </div>
+          </a>
+        </li>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/yourprofile" target="_blank">
+              <div class="tooltip">
+                <box-icon animation='tada-hover' color='white' type='logo' name='linkedin'></box-icon>
+                <span class="tooltip-text">LinkedIn</span>
+              </div>
+            </a>
+            <a href="https://github.com/yourprofile" target="_blank">
+              <div class="tooltip">
+                <box-icon animation='tada-hover' color='white' type='logo' name='github'></box-icon>
+                <span class="tooltip-text">GitHub</span>
+              </div>
+            </a>
+        </div>
+      </ul>
+    </nav>
+    <main class="content" id="content-area">
+      <h1>Content Area</h1>
+      <p>This is where the main content will go.</p>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
